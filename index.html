@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi nuevo proyecto</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>botones</title>
 </head>
+<style>
+	#table,tr,th{
+		border: black 2px solid;
+		font-size: 20px;
+		letter-spacing: 10px;
+		width: 250px;
+		position: relative;
+	}
+	.inicio{
+		padding-left: 43%;
+		padding-top: 200px;
+	}
+</style>
 <body>
-    <h1>hola esto es un commit</h1>
-    <form action="">
-        <input type="text" name="nuevo" id="a">
-    </form>
+	<div class="inicio">
+	<form action="prueba.php" method="post">
+	<table>
+		<tr>
+			<th>usuario</th>
+			</tr>
+			<tr>
+			<th><input type="email" name="usuario"></th>
+			</tr>
+			<tr>
+				<th>contraseña</th>
+			</tr>
+			<tr><th><input type="password" name="contraseña"></th></tr>
+	</table>
+	<input type="submit" name="envio">
+</form></div>
 </body>
 </html>
