@@ -6,8 +6,6 @@ $_SESSION['contraseña'] =$_POST['contra'];
 $_SESSION['secion'] =session_id();
 $_SESSION['usuario'] =date("Y-m-dates");
 header("Location:menu2.html");
-}else{
-	
 }
 
 foreach ($_SESSION as $key => $val) {
