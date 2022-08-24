@@ -10,5 +10,11 @@
   <form action="prueba.php" method="post">
     <input type="submit" name="salir" value="salir">
   </form>
+  <?php
+  
+ $file=fopen("doc.txt","r");
+ echo fread($file,2);
+ 
+  ?>
 </body>
 </html>

@@ -1,15 +1,14 @@
 <?php
-$usuario="admin@ini.com";
-$contra=123;
+
 if (isset($_POST["usuario"])) {
-	if ($_POST["usuario"] == $usuario && $_POST["contra"] == $contra) {
+	
 	session_start();
 	session_id();
 	header("Location:index.php");
 }else{
 	echo "no";
 }
-}
+
 if (isset($_POST["salir"])) {
 	session_destroy();
 	header("Location:menu.php");
