@@ -27,7 +27,7 @@
 	<form action="prueba.php" method="post">
 	<table>
 		<tr>
-			<th>usuario</th>
+			<th>usuario e email</th>
 			</tr>
 			<tr>
 			<th><input type="email" name="usuario" placeholder="email"></th>
