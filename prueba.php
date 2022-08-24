@@ -1,16 +1,18 @@
 <?php
-session_start();
-if (session_id()) {
-$_SESSION['session_id'] =$_POST['usuario'];
-$_SESSION['contraseña'] =$_POST['contra']; 
-$_SESSION['secion'] =session_id();
-$_SESSION['usuario'] =date("Y-m-dates");
-header("Location:menu2.html");
+$usuario="admin@ini.com";
+$contra=123;
+if (isset($_POST["usuario"])) {
+	if ($_POST["usuario"] == $usuario && $_POST["contra"] == $contra) {
+	session_start();
+	session_id();
+	header("Location:index.php");
+}else{
+	echo "no";
 }
-
-foreach ($_SESSION as $key => $val) {
-	echo $key."=".$val;
-	echo "<br>";
+}
+if (isset($_POST["salir"])) {
+	session_destroy();
+	header("Location:menu.php");
 }
 
 

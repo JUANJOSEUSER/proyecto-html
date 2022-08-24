@@ -21,7 +21,8 @@
 	margin-left: 100px;
 	}
 </style>
-<body>
+<body></body>
+
 	<div class="inicio">
 	<form action="prueba.php" method="post">
 	<table>
@@ -37,7 +38,8 @@
 			<tr><th><input type="password" name="contra" placeholder="contraseña"></th></tr>
 	</table>
 	<input type="image" src="envio.png" width="100px" height="50px" alt="submit" name="envio">
-</form></div>
-</body>
 
+</form></div>
+
+</body>
 </html>
